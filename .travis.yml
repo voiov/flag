@@ -1,8 +1,13 @@
-language:go
+language: go
+
+go:
+  - "1.x"
+  - "1.8"
+  - "1.10.x"
+  - "1.11.x"
+  - master
 
 script:
     - go vet ./...
     - go test -v ./...
 
-go:
-    - "1.11"
